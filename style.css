@@ -1,0 +1,99 @@
+body {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #444; /* Darker background color */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    color: #fff;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    color: #fff;
+  }
+  
+  .slider-container {
+    position: relative;
+  }
+  
+  .slider-container input[type="range"] {
+    width: 100%;
+    -webkit-appearance: none;
+    appearance: none;
+    background: #666; /* Darker background color */
+    border-radius: 5px;
+    height: 10px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .slider-container input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider-container .slider-value {
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .slider-container .per-week {
+    position: absolute;
+    bottom: -15px;
+    right: 0;
+    left: 0;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .attitude-slider-container {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .attitude-slider-container input[type="range"] {
+    width: 100%;
+  }
+  
+  .attitude-slider-container input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 0;
+    height: 0;
+  }
+  
+  .attitude-slider-container .attitude-options {
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .result {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+  }
+  

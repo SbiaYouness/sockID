@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="style.css">
+<title>Sock Loss Index Calculator</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Sock Loss Index Calculator</h1>
+    <form id="sockLossForm">
+      <div class="form-group">
+        <label for="people">People in household:</label>
+        <div class="slider-container">
+          <input type="range" id="people" name="people" min="1" max="20" value="1" step="1">
+          <div class="slider-value" id="peopleValue">1</div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="precautions">Precautions taken:</label>
+        <div class="slider-container">
+          <input type="range" id="precautions" name="precautions" min="0" max="10" value="0" step="1">
+          <div class="slider-value" id="precautionsValue">0</div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="types">Types of washes:</label>
+        <div class="slider-container">
+          <input type="range" id="types" name="types" min="1" max="20" value="1" step="1">
+          <div class="slider-value" id="typesValue">1</div>
+          <span class="per-week">per week</span>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="washFreq">Number of washes:</label>
+        <div class="slider-container">
+          <input type="range" id="washFreq" name="washFreq" min="0" max="100" value="0" step="1">
+          <div class="slider-value" id="washFreqValue">0</div>
+          <span class="per-week">per week</span>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="attitude">Attitude towards doing laundry:</label>
+        <div class="attitude-slider-container">
+          <input type="range" id="attitude" name="attitude" min="1" max="5" value="3">
+          <div class="attitude-options">
+            <span>I hate it</span>
+            <span>I don't like it</span>
+            <span>Neutral</span>
+            <span>I like it</span>
+            <span>I love it</span>
+          </div>
+        </div>
+        <div class="slider-value" id="attitudeValue">Neutral</div>
+      </div>
+
+      <div class="form-group">
+        <label for="socks">Total socks washed:</label>
+        <div class="slider-container">
+          <input type="range" id="socks" name="socks" min="0" max="100" value="0" step="1">
+          <div class="slider-value" id="socksValue">0</div>
+          <span class="per-week">per week</span>
+        </div>
+      </div>
+
+      <input type="button" value="Calculate" onclick="calculateSockLossIndex()">
+    </form>
+
+    <div id="result" class="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
